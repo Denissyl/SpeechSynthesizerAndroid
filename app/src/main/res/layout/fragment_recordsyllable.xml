@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.recordSyllable.RecordSyllableFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-77dp"
+        tools:layout_editor_absoluteY="37dp">
+
+        <TextView
+            android:id="@+id/textViewRecord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="15dp"
+            android:text="Введите слог или букву, которую хотите записать"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/editTextRecord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textViewStatusRecord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:text="Статус: Запись не начата"
+            android:textAlignment="center"
+            android:textColor="#FF9800" />
+
+        <Button
+            android:id="@+id/buttonRecord"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="#00FF00"
+            android:text="Начать запись"
+            android:textColor="#FF373737" />
+
+        <Button
+            android:id="@+id/buttonStop"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="#FF0000"
+            android:text="Остановить запись"
+            android:textColor="#FF373737" />
+
+        <Button
+            android:id="@+id/buttonListen"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="#00BFFF"
+            android:text="Прослушать"
+            android:textColor="#FF373737" />
+
+        <TextView
+            android:id="@+id/textViewSyllables"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="15dp"
+            android:text="Введите слово, для просмотра слогов"
+            android:textAlignment="center" />
+        <EditText
+            android:id="@+id/editTextWordForSyllables"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textViewSyllablesOutput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:text=""
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/buttonCheckSyllables"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="#FFE500"
+            android:text="Просмотреть"
+            android:textColor="#FF373737" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

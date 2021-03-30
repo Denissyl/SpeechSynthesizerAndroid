@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.info.InfoFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="341dp"
+        tools:layout_editor_absoluteY="331dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textViewInfo1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Синтезатор речи"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/textViewInfo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto"
+                android:text="    Пользователь может прослушать какой-либо текст по буквам, которые записаны в базе данных.\n
+    При включенной кнопке  “Синтез речи в реальном времени”, пользователь, вводя текст с клавиатуры, услышит введённую букву\n
+    Присутствует возможность изменить скорость воспроизведения в большую и меньшую сторону.\n
+    Нажав кнопку “Воспроизвести”, все введённые буквы воспроизведется.\n
+    Если пользователь хочет прослушать слово по слогам ему необходимо перейти на вкладку запись слога/буквы, ввести нужный слог слова, затем нажать кнопку записи, произнести слог и завершить запись. Пользователь может посмотреть слоги слова во вкладке с записью. После этого записанный слог попадёт в базу данных.\n
+    Присутствует возможность прослушать записанный слог.\n
+    С помощью выпадающего меню пользователь может сменить синтез речи на гугловского робота.\n
+    На вкладке “База данных” пользователь может управлять базой данных. За отображение всех записей отвечает кнопка “Вывести всё”. Чтобы вывести или удалить нужный слог/букву, следует написать слог/букву и нажать кнопку “Вывести” или “Удалить”.
+"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.305" />
+    <TextView
+        android:id="@+id/textViewInfo3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Разработчик: Денис Султангулов\n
+                2021 © Denissyl"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

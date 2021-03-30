@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_synthesis">
+
+    <fragment
+        android:id="@+id/nav_synthesis"
+        android:name="com.speechsynthesizer.ui.synthesis.SynthesisFragment"
+        android:label="Синтез речи"
+        tools:layout="@layout/fragment_synthesis" />
+
+    <fragment
+        android:id="@+id/nav_recordSyllable"
+        android:name="com.speechsynthesizer.ui.recordSyllable.RecordSyllableFragment"
+        android:label="Запись слога/буквы"
+        tools:layout="@layout/fragment_recordsyllable" />
+
+    <fragment
+        android:id="@+id/nav_database"
+        android:name="com.speechsynthesizer.ui.database.DatabaseFragment"
+        android:label="База данных"
+        tools:layout="@layout/fragment_database" />
+
+    <fragment
+        android:id="@+id/nav_info"
+        android:name="com.speechsynthesizer.ui.info.InfoFragment"
+        android:label="О программе"
+        tools:layout="@layout/fragment_info" />
+</navigation>

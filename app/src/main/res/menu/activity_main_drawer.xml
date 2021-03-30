@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_synthesis"
+            android:icon="@drawable/ic_menu_synthesis"
+            android:title="Синтез речи" />
+        <item
+            android:id="@+id/nav_recordSyllable"
+            android:icon="@drawable/ic_menu_recordsyllable"
+            android:title="Запись слога/буквы" />
+        <item
+            android:id="@+id/nav_database"
+            android:icon="@drawable/ic_menu_database"
+            android:title="База данных" />
+        <item
+            android:id="@+id/nav_info"
+            android:icon="@drawable/ic_menu_info"
+            android:title="О программе" />
+    </group>
+</menu>
